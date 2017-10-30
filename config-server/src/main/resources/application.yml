@@ -6,8 +6,10 @@ spring:
     config:
       server:
         git:
-          uri: file://D:/github/spring-config
+          uri: https://github.com/mxsm/spring-config.git
           search-paths: config-repo,config-repo/config-repo1
+#          uri: file://D:/github/spring-config
+#          search-paths: config-repo,config-repo/config-repo1
 
 
 
