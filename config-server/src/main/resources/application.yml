@@ -1,13 +1,17 @@
 server:
   port: 9000
-  
+
+management:
+  security:
+    enabled: false
+ 
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/mxsm/spring-config.git
-          search-paths: config-repo,config-repo/config-repo1
+          uri: https://github.com/mxsm/config-repo.git
+          search-paths: ./,config-repo/config-repo1
 #          uri: file://D:/github/spring-config
 #          search-paths: config-repo,config-repo/config-repo1
 
