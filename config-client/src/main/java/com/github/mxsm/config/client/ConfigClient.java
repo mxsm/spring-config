@@ -15,18 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @SpringBootApplication
 @RestController
-@RefreshScope
 public class ConfigClient 
 {
-	@Value("${profile}")
-	private String test;
-	
-	@RequestMapping("/")
-	public String get() {
-		
-		return test;
-	}
-	
     public static void main( String[] args )
     {
         SpringApplication.run(ConfigClient.class, args);
